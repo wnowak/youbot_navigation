@@ -5,6 +5,8 @@ find_package(catkin REQUIRED roscpp geometry_msgs)
 
 catkin_package()
 
+include_directories(${catkin_INCLUDE_DIRS})
+
 add_executable(lowpass_filter
 	src/lowpass_filter.cpp
 )
